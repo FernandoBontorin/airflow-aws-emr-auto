@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "airflow-aws-emr-auto"
+version = "0.1.0"
+description = "Apache Airflow Plugin to build EMR given Apache Spark resources"
+authors = ["Your Name <you@example.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [{include = "airflow_aws_emr_auto"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+apache-airflow = {version = "2.6.3", extras = ["amazon"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
